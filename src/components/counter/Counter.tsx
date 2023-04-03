@@ -5,6 +5,8 @@ import store from "./Counter.store";
 import styles from "./Counter.module.css";
 import userStore from "../../components/user/User.store";
 
+import Button from "@mui/material/Button";
+
 class Counter extends Component {
   render() {
     return (
@@ -15,8 +17,12 @@ class Counter extends Component {
 
         <h3>Count: {store.count}</h3>
         <h3>Count x2: {store.getCountx2}</h3>
-        <button onClick={(e) => store.decrement()}>-1</button>
-        <button onClick={(e) => store.increment()}>+1</button>
+        <Button variant="contained" onClick={(e) => store.decrement()}>
+          -1
+        </Button>
+        <Button variant="outlined" onClick={(e) => store.increment()}>
+          +1
+        </Button>
       </div>
     );
   }
