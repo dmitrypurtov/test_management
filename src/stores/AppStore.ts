@@ -1,5 +1,9 @@
 import CounterStore from "../components/counter/Counter.store"
+import UserStore from "../components/user/User.store"
 
-export default class AppStore {
+class AppStore {
     counter = CounterStore;
+    user = UserStore;
 }
+
+export default AppStore;

@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import Counter from "../../components/counter/Counter";
+import User from "../../components/user/User";
 
 class HomePage extends Component {
   render() {
@@ -9,6 +10,9 @@ class HomePage extends Component {
         <ul>
           <li>
             <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/home">Home2</Link>
           </li>
           <li>
             <Link to="/projects">Projects</Link>
@@ -20,6 +24,10 @@ class HomePage extends Component {
         <br />
         <br />
         <Counter />
+        <br />
+        <br />
+        <br />
+        <User />
       </div>
     );
   }
